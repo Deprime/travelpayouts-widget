@@ -1,0 +1,131 @@
+// Variables
+$tpo-bg-color: #4a90e2;
+$tpo-text-color: #fff;
+$tpo-border-radius: 2px;
+$tpo-line-height: 20px;
+$tpo-font-size: 14px;
+$tpo-font-family: "Open Sans", sans-serif;
+$tpo-base-padding: 10px;
+$tpo-control-height: 40px;
+$tpo-control-padding: 4px 10px;
+$tpo-submit-bg-color: #f5a623;
+$tpo-submit-shadow-color: rgba(0,0,0,0.1);
+
+@import 'pikaday.css';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.tpo-widget {
+	font-family: $tpo-font-family;
+	background: $tpo-bg-color;
+	color: $tpo-text-color;
+	display: block;
+	padding: 5px 10px;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 200px;
+	margin: 10px 0 20px 0;
+
+	.tpo-form {width: 100%;}
+	.tpo-form * {box-sizing: border-box;}
+	.tpo-input, .tpo-submit_btn {
+	    border: none;
+		cursor: pointer;
+	    font-size: $tpo-font-size;
+		font-family: $tpo-font-family;
+	    border-radius: $tpo-border-radius;
+	    height: $tpo-control-height;
+	}
+	.tpo-title {
+		font-weight: normal;
+		font-size: 22px;
+		margin: 5px 10px 0 10px;
+	}
+	.tpo-info {
+		p {
+			display: block;
+			width: 100%;
+			margin: 0;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	.tpo-group {
+		display: table; 
+		width:100%
+	}
+	.tpo-group:before, 
+    .tpo-group:after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+    .tpo-info, .tpo-date-range, .tpo-date-range_cell, .tpo-submit {
+		float: left;
+	    display: block;
+	    min-height: 1px;
+	    position: relative;
+    }
+	.tpo-date-range {}
+	.tpo-date-range_cell {
+		.tpo-input {
+		    line-height: $tpo-line-height;
+		    padding: $tpo-control-padding;
+		    background: #fff url('calendar.svg') 95% 50% no-repeat;
+		}
+	}
+	.tpo-submit {
+		.tpo-submit_btn {
+			font-size: 18px;
+			line-height: 18px;
+			display: block;
+			background-color: $tpo-submit-bg-color;
+			box-shadow: inset 0 -3px 0 $tpo-submit-shadow-color;
+			color: $tpo-text-color;
+		    padding: $tpo-base-padding;
+		    transition: all 200ms ease;
+		}
+		.tpo-submit_btn:hover {
+			filter: brightness(110%);
+			box-shadow: inset 0 -3px 0 lighten($tpo-submit-shadow-color, 5%);
+		}
+	}
+}
+
+.tpo-widget-lg {
+	.tpo-info, .tpo-date-range_cell, .tpo-submit {padding: $tpo-base-padding;}
+	.tpo-info {padding-bottom: 0;}
+	.tpo-input, .tpo-submit_btn {width: 100%;}
+	.tpo-info {width: 32%;}
+	.tpo-date-range {width: 43%}
+	.tpo-date-range_cell {width: 50%;}
+	.tpo-submit {width: 25%}
+}
+
+.tpo-widget-md {
+	.tpo-info, .tpo-date-range_cell, .tpo-submit {padding: $tpo-base-padding;}
+	.tpo-input, .tpo-submit_btn {width: 100%;}
+	.tpo-info {width: 100%;}
+	.tpo-date-range {width: 66.66%}
+	.tpo-date-range_cell {width: 50%;}
+	.tpo-submit {width: 33.33%}
+}
+.tpo-widget-sm {
+	.tpo-info, .tpo-date-range_cell, .tpo-submit {padding: $tpo-base-padding;}
+	.tpo-input, .tpo-submit_btn {width: 100%;}
+	.tpo-title {font-size: 19px;}
+	.tpo-info {width: 100%;}
+	.tpo-date-range {width: 100%}
+	.tpo-date-range_cell {width: 50%;}
+	.tpo-submit {width: 100%}
+}
+.tpo-widget-xs {
+	.tpo-info, .tpo-date-range, .tpo-date-range_cell, .tpo-submit {float: none;}
+	.tpo-info, .tpo-date-range_cell, .tpo-submit {padding: $tpo-base-padding;}
+	.tpo-input, .tpo-submit_btn {width: 100%;}
+	.tpo-title {font-size: 19px;}
+	.tpo-info {width: 100%; display: table-footer-group;}
+	.tpo-info p {display: block; padding: $tpo-base-padding; padding-top: 5px;}
+	.tpo-date-range {width: 100%}
+	.tpo-date-range_cell {width: 100%;}
+	.tpo-submit {width: 100%}
+}
