@@ -14,8 +14,10 @@ $tpo-submit-shadow-color: rgba(0,0,0,0.1);
 @import 'pikaday.css';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+.tpo-widget * {
+	font-family: $tpo-font-family !important;
+}
 .tpo-widget {
-	font-family: $tpo-font-family;
 	background: $tpo-bg-color;
 	color: $tpo-text-color;
 	display: block;
@@ -36,8 +38,8 @@ $tpo-submit-shadow-color: rgba(0,0,0,0.1);
 	    height: $tpo-control-height;
 	}
 	.tpo-title {
-		font-weight: normal;
-		font-size: 22px;
+		font-weight: normal !important;
+		font-size: 22px !important;
 		margin: 5px 10px 0 10px;
 	}
 	.tpo-info {
@@ -45,8 +47,8 @@ $tpo-submit-shadow-color: rgba(0,0,0,0.1);
 			display: block;
 			width: 100%;
 			margin: 0;
-			font-size: 12px;
-			line-height: 14px;
+			font-size: 12px !important;
+			line-height: 14px !important;
 		}
 	}
 	.tpo-group {
@@ -68,6 +70,7 @@ $tpo-submit-shadow-color: rgba(0,0,0,0.1);
 	.tpo-date-range {}
 	.tpo-date-range_cell {
 		.tpo-input {
+			color:#555 !important;
 		    line-height: $tpo-line-height;
 		    padding: $tpo-control-padding;
 		    background: #fff url('calendar.svg') 95% 50% no-repeat;
@@ -75,8 +78,8 @@ $tpo-submit-shadow-color: rgba(0,0,0,0.1);
 	}
 	.tpo-submit {
 		.tpo-submit_btn {
-			font-size: 18px;
-			line-height: 18px;
+			font-size: 18px !important;
+			line-height: 18px !important;
 			display: block;
 			background-color: $tpo-submit-bg-color;
 			box-shadow: inset 0 -3px 0 $tpo-submit-shadow-color;
