@@ -34,7 +34,7 @@ class Widget {
 		let btn_text   = this.btn_text;
 		let btn_bg_color = this.btn_bg_color;
 		let depart_placeholder = this.depart_placeholder;
-		let return_placeholder    = this.return_placeholder;
+		let return_placeholder = this.return_placeholder;
 
 		let template = `<div class="tpo-widget tpo-widget-${size}" style="background-color: ${bg_color}; color: ${font_color}">
 			<form class="tpo-form">
