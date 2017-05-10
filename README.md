@@ -10,4 +10,6 @@
 3. `npm install`
 4. `npm run dev`
 
+После этого откроется окно браузера с примером формы.
+
 С примером использования формы можно ознакомиться на демо-странице <a href="http://widget.tm-ss.ru" target="_blank">http://widget.tm-ss.ru</a>
