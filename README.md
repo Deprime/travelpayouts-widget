@@ -10,5 +10,4 @@
 3. `npm install`
 4. `npm run dev`
 
-С примером использования формы можно ознакомиться на демо-странице
-http://widget.tm-ss.ru
+С примером использования формы можно ознакомиться на демо-странице <a href="http://widget.tm-ss.ru" target="blank">http://widget.tm-ss.ru</a>
